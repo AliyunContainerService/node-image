@@ -1,4 +1,4 @@
-FROM node:5.3.0
+FROM node:4
 MAINTAINER Li Yi <denverdino@gmail.com>
-ADD sources.list /etc/apt/sources.list
+COPY sources.list /etc/apt/sources.list
 RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
